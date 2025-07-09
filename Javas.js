@@ -50,63 +50,69 @@
         // Portfolio Gallery
         const portfolioItems = [
             // Design projects (8)
-            { id: 1, category: 'design', image: 'assets/images/Logos/K2.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/DNKJ.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Imprimer.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/B.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Piquancy.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Chips.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Design.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Coffeee.jpg' },
+            { id: 1, category: 'design', image: 'K2.jpg' },
+            { id: 1, category: 'design', image: 'DNKJ.jpg' },
+            { id: 1, category: 'design', image: 'Imprimer.jpg' },
+            { id: 1, category: 'design', image: 'B.jpg' },
+            { id: 1, category: 'design', image: 'Piquancy.jpg' },
+            { id: 1, category: 'design', image: 'Chips.jpg' },
+            { id: 1, category: 'design', image: 'Design.jpg' },
+            { id: 1, category: 'design', image: 'Coffeee.jpg' },
             
             // Branding projects (8)
-            { id: 1, category: 'design', image: 'assets/images/Calendrier.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Bissap.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Coffee.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/COTTURA.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Délice.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Dina Menu.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Flyers.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Horreur.jpg' },
+            { id: 1, category: 'design', image: 'Calendrier.jpg' },
+            { id: 1, category: 'design', image: 'Bissap.jpg' },
+            { id: 1, category: 'design', image: 'Coffee.jpg' },
+            { id: 1, category: 'design', image: 'COTTURA.jpg' },
+            { id: 1, category: 'design', image: 'Délice.jpg' },
+            { id: 1, category: 'design', image: 'Dina Menu.jpg' },
+            { id: 1, category: 'design', image: 'Flyers.jpg' },
+            { id: 1, category: 'design', image: 'Horreur.jpg' },
             
             // Additional items to reach 32
-            { id: 1, category: 'design', image: 'assets/images/Kakemono.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/LIVRE.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Boruto.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Logis.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Mock up.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/MonFlyer.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Petit.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Poster.jpg' },
+            { id: 1, category: 'design', image: 'Kakemono.jpg' },
+            { id: 1, category: 'design', image: 'LIVRE.jpg' },
+            { id: 1, category: 'design', image: 'Boruto.jpg' },
+            { id: 1, category: 'design', image: 'Logis.jpg' },
+            { id: 1, category: 'design', image: 'Mock up.jpg' },
+            { id: 1, category: 'design', image: 'MonFlyer.jpg' },
+            { id: 1, category: 'design', image: 'Petit.jpg' },
+            { id: 1, category: 'design', image: 'Poster.jpg' },
             
-            { id: 1, category: 'design', image: 'assets/images/PosterAvengers.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Réseaux.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Restaurant.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Cinéma.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Samossa.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/TheHill.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Will.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/BATEAU.jpg' },
+            { id: 1, category: 'design', image: 'PosterAvengers.jpg' },
+            { id: 1, category: 'design', image: 'Réseaux.jpg' },
+            { id: 1, category: 'design', image: 'Restaurant.jpg' },
+            { id: 1, category: 'design', image: 'Cinéma.jpg' },
+            { id: 1, category: 'design', image: 'Samossa.jpg' },
+            { id: 1, category: 'design', image: 'TheHill.jpg' },
+            { id: 1, category: 'design', image: 'WILL.jpg' },
+            { id: 1, category: 'design', image: 'BATEAU.jpg' },
             
-            { id: 1, category: 'design', image: 'assets/images/Menus.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Banners.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Menu.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/Téléphone.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/CoffeeHouse.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/Logo2.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/TransAqua.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/Foret.png' },
+            { id: 1, category: 'design', image: 'Menus.jpg' },
+            { id: 1, category: 'design', image: 'Banners.jpg' },
+            { id: 1, category: 'design', image: 'Menu.jpg' },
+            { id: 1, category: 'design', image: 'Téléphone.png' },
+            { id: 1, category: 'design', image: 'CoffeeHouse.png' },
+            { id: 1, category: 'design', image: 'Logo2.png' },
+            { id: 1, category: 'design', image: 'TransAqua.png' },
+            { id: 1, category: 'design', image: 'Foret.png' },
             
             // More items...
-            { id: 1, category: 'design', image: 'assets/images/Logos/JULIANAFood.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/squid Game.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/Luna.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logos/Marque.png' },
-            { id: 1, category: 'design', image: 'assets/images/Logo complet.png' },
-            { id: 1, category: 'design', image: 'assets/images/Mock up copie.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Soccer copie.jpg' },
-            { id: 1, category: 'design', image: 'assets/images/Basket-Ball.jpg' },
+            { id: 1, category: 'design', image: 'JULIANAFood.png' },
+            { id: 1, category: 'design', image: 'Squid Game.png' },
+            { id: 1, category: 'design', image: 'Luna.png' },
+            { id: 1, category: 'design', image: 'Marque.png' },
+            { id: 1, category: 'design', image: 'Logo complet.png' },
+            { id: 1, category: 'design', image: 'Mock up copie.jpg' },
+            { id: 1, category: 'design', image: 'Soccer copie.jpg' },
+            { id: 1, category: 'design', image: 'Basket-Ball.jpg' },
             
+            // More items...Ajouter récement
+            { id: 1, category: 'design', image: '20230920_211928.png' },
+            { id: 1, category: 'design', image: 'Chareine.jpg' },
+            { id: 1, category: 'design', image: 'Juliana Food second.jpg' },
+            { id: 1, category: 'design', image: 'RAIL.jpg' },
+            { id: 1, category: 'design', image: 'Luunaa.jpg' },
         ];
 
         // Pagination variables
@@ -122,8 +128,7 @@
         const pageInfo = document.getElementById('page-info');
         const filterAll = document.getElementById('filter-all');
         const filterDesign = document.getElementById('filter-design');
-        const filterDev = document.getElementById('filter-dev');
-        const filterBranding = document.getElementById('filter-branding');
+
 
         // Initialize gallery
         function renderGallery() {
@@ -137,10 +142,10 @@
                 const card = document.createElement('div');
                 card.className = 'portfolio-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300';
                 card.innerHTML = `
-                    <div class="relative pb-2/3 h-48 cursor-pointer" onclick="openLightbox('${item.image}', '${item.title}')">
+                    <div class="relative pb-2/3 h-48 cursor-pointer" onclick="openLightbox('${item.image}')">
                         <img class="absolute h-full w-full object-cover" src="${item.image}" alt="${item.title}">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <h3 class="text-white font-medium">${item.title}</h3>
+                            <h3 class="text-white font-medium"></h3>
                         </div>
                     </div>
                 `;
