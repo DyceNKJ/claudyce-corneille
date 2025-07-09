@@ -85,7 +85,7 @@
             { id: 1, category: 'design', image: 'Cinéma.jpg' },
             { id: 1, category: 'design', image: 'Samossa.jpg' },
             { id: 1, category: 'design', image: 'TheHill.jpg' },
-            { id: 1, category: 'design', image: 'Will.jpg' },
+            { id: 1, category: 'design', image: 'WILL.jpg' },
             { id: 1, category: 'design', image: 'BATEAU.jpg' },
             
             { id: 1, category: 'design', image: 'Menus.jpg' },
@@ -99,7 +99,7 @@
             
             // More items...
             { id: 1, category: 'design', image: 'JULIANAFood.png' },
-            { id: 1, category: 'design', image: 'squid Game.png' },
+            { id: 1, category: 'design', image: 'Squid Game.png' },
             { id: 1, category: 'design', image: 'Luna.png' },
             { id: 1, category: 'design', image: 'Marque.png' },
             { id: 1, category: 'design', image: 'Logo complet.png' },
@@ -107,6 +107,12 @@
             { id: 1, category: 'design', image: 'Soccer copie.jpg' },
             { id: 1, category: 'design', image: 'Basket-Ball.jpg' },
             
+            // More items...Ajouter récement
+            { id: 1, category: 'design', image: '20230920_211928.png' },
+            { id: 1, category: 'design', image: 'Chareine.jpg' },
+            { id: 1, category: 'design', image: 'Juliana Food second.jpg' },
+            { id: 1, category: 'design', image: 'RAIL.jpg' },
+            { id: 1, category: 'design', image: 'Luunaa.jpg' },
         ];
 
         // Pagination variables
@@ -122,8 +128,7 @@
         const pageInfo = document.getElementById('page-info');
         const filterAll = document.getElementById('filter-all');
         const filterDesign = document.getElementById('filter-design');
-        const filterDev = document.getElementById('filter-dev');
-        const filterBranding = document.getElementById('filter-branding');
+
 
         // Initialize gallery
         function renderGallery() {
@@ -137,10 +142,10 @@
                 const card = document.createElement('div');
                 card.className = 'portfolio-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300';
                 card.innerHTML = `
-                    <div class="relative pb-2/3 h-48 cursor-pointer" onclick="openLightbox('${item.image}', '${item.title}')">
+                    <div class="relative pb-2/3 h-48 cursor-pointer" onclick="openLightbox('${item.image}')">
                         <img class="absolute h-full w-full object-cover" src="${item.image}" alt="${item.title}">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <h3 class="text-white font-medium">${item.title}</h3>
+                            <h3 class="text-white font-medium"></h3>
                         </div>
                     </div>
                 `;
