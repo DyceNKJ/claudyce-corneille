@@ -163,3 +163,19 @@
   .delay-6 { animation-delay: 1.2s; }
   .delay-7 { animation-delay: 1.4s; }
   .delay-8 { animation-delay: 1.6s; }
+
+  .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.badge {
+  background-color: #1f2937; /* gris foncé */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
