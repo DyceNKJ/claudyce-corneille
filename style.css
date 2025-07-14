@@ -178,3 +178,11 @@
         font-size: 14px;
         font-weight: 500;
       }
+
+      .site-info-overlay {
+        background-color: rgba(0, 0, 0, 0.6); /* assombrit l’arrière-plan */
+      }
+
+      .site-info-overlay * {
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); /* améliore la lisibilité du texte */
+      }
