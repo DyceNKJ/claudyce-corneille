@@ -178,3 +178,26 @@ filterDesign.addEventListener('click', () => filterItems('design'));
 
 // Initialize gallery with design category
 filterItems('design');
+
+  function showService(type) {
+    const devContent = document.getElementById('content-dev');
+    const designContent = document.getElementById('content-design');
+    const btnDev = document.getElementById('btn-dev');
+    const btnDesign = document.getElementById('btn-design');
+
+    if (type === 'dev') {
+      devContent.classList.remove('hidden');
+      designContent.classList.add('hidden');
+      btnDev.classList.replace('bg-gray-300', 'bg-blue-600');
+      btnDev.classList.replace('text-gray-800', 'text-white');
+      btnDesign.classList.replace('bg-purple-600', 'bg-gray-300');
+      btnDesign.classList.replace('text-white', 'text-gray-800');
+    } else {
+      designContent.classList.remove('hidden');
+      devContent.classList.add('hidden');
+      btnDesign.classList.replace('bg-gray-300', 'bg-purple-600');
+      btnDesign.classList.replace('text-gray-800', 'text-white');
+      btnDev.classList.replace('bg-blue-600', 'bg-gray-300');
+      btnDev.classList.replace('text-white', 'text-gray-800');
+    }
+  }

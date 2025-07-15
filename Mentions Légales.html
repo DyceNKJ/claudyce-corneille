@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions Légales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body class="bg-gray-900 text-gray-800 font-sans transition-colors duration-300" id="body">
+
+  <!-- Barre d'action -->
+  <div class="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto">
+    <button onclick="scrollToTop()" aria-label="Retour en haut" title="Retour en haut" class="fas fa-arrow-left text-white px-4 py-2 rounded-lg shadow">
+      <a href="index.html"> Retour en arrière</a>
+    </button>
+    <button onclick="toggleTheme()" id="themeBtn" aria-label="Changer le mode clair/sombre" title="Changer le mode clair/sombre" 
+      class="bg-gray-200 hover:bg-gray-300 text-gray-900 px-4 py-2 rounded-lg shadow text-2xl leading-none">
+      🌞
+    </button>
+  </div>
+
+  <!-- Contenu principal -->
+  <section class="max-w-5xl mx-auto px-6 py-8" id="content">
+    <h1 class="text-4xl font-bold text-white text-center mb-12">Mentions légales</h1>
+
+    <!-- BOÎTES -->
+    <div class="space-y-8">
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Éditeur du site</h2>
+        <p>
+          Ce site est édité par :<br />
+          <strong>Nom :</strong> SALABANZI Claudyce Corneille<br />
+          <strong>Statut :</strong> Freelance<br />
+          <strong>Adresse :</strong> Brazzaville, République du Congo<br />
+          <strong>Email :</strong> <a href="mailto:claudycecorneilles@gmail.com" class="text-blue-600 hover:underline">claudycecorneilles@gmail.com</a><br />
+          <strong>Téléphone :</strong> +242 488 36 55
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Hébergement</h2>
+        <p>
+          <strong>Hébergeur :</strong> Vercel Inc.<br />
+          <strong>Adresse :</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis<br />
+          <strong>Site web :</strong>
+          <a href="https://vercel.com" class="text-blue-600 hover:underline" target="_blank">www.vercel.com</a>
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Propriété intellectuelle</h2>
+        <p>
+          L’ensemble des contenus présents sur ce site est protégé par les lois sur la propriété intellectuelle.  
+          Toute reproduction, diffusion ou modification sans autorisation est interdite.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Données personnelles</h2>
+        <p>
+          Les données collectées via le site sont utilisées uniquement pour vous répondre.  
+          Elles ne sont ni partagées ni vendues.<br />
+          Vous pouvez demander la suppression ou la modification de vos données à :
+          <a href="mailto:claudycecorneilles@gmail.com" class="text-blue-600 hover:underline">claudycecorneilles@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Cookies</h2>
+        <p>
+          Ce site peut utiliser des cookies pour améliorer la navigation et analyser l’audience.  
+          Vous pouvez les désactiver dans les paramètres de votre navigateur.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Limitation de responsabilité</h2>
+        <p>
+          L’éditeur ne peut être tenu responsable des erreurs ou interruptions de service.  
+          L’accès au site peut être suspendu pour maintenance.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Liens externes</h2>
+        <p>
+          Ce site peut contenir des liens vers d'autres plateformes. L’éditeur décline toute responsabilité concernant leur contenu.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-2">Droit applicable</h2>
+        <p>
+          Ce site est régi par la législation en vigueur en République du Congo.  
+          Tout différend fera d’abord l’objet d’une tentative de résolution amiable.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleTheme() {
+      const body = document.getElementById('body');
+      const btn = document.getElementById('themeBtn');
+      const content = document.getElementById('content');
+
+      const isDark = body.classList.contains('bg-gray-900');
+
+      if (isDark) {
+        body.classList.remove('bg-gray-900');
+        body.classList.add('bg-white');
+        content.classList.add('text-gray-900');
+        btn.textContent = '🌙'; // Lune = mode sombre
+        btn.setAttribute('aria-label', 'Passer en mode sombre');
+        btn.setAttribute('title', 'Passer en mode sombre');
+      } else {
+        body.classList.add('bg-gray-900');
+        body.classList.remove('bg-white');
+        content.classList.remove('text-gray-900');
+        btn.textContent = '🌞'; // Soleil = mode clair
+        btn.setAttribute('aria-label', 'Passer en mode clair');
+        btn.setAttribute('title', 'Passer en mode clair');
+      }
+    }
+  </script>
+
+</body>
+</html>

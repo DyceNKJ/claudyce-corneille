@@ -186,3 +186,29 @@
       .site-info-overlay * {
         text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); /* améliore la lisibilité du texte */
       }
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
+.tarifs-link {
+  display: inline-block;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tarifs-link:hover {
+  text-decoration: underline;
+}
