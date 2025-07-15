@@ -645,57 +645,51 @@
     </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-800 to-blue-900">
+<section id="contact" class="py-14 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-800 to-blue-900">
   <div class="max-w-7xl mx-auto">
     <div class="text-center">
-      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
         Travaillons ensemble
       </h2>
-      <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+      <p class="mt-2 max-w-2xl mx-auto text-lg text-gray-500 sm:mt-3">
         Vous avez un projet en tête ? Parlons-en !
       </p>
     </div>
 
-    <!-- Contenu principal -->
-    <div class="mt-12 shadow-xl rounded-lg overflow-hidden slide-up">
+    <div class="mt-8 shadow-lg rounded-lg overflow-hidden slide-up">
       <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch h-full">
-        
+
         <!-- Formulaire -->
-        <div class="px-6 py-8 sm:p-10 bg-white bloc-contact transition-colors duration-500 slide-up h-full">
-          <h3 class="text-lg font-medium text-black fs-2">Envoyez-moi un message</h3>
-          <form id="contact-form" class="mt-6 space-y-6">
+        <div class="px-5 py-6 sm:p-8 bg-white bloc-contact transition-colors duration-500 slide-up h-full">
+          <h3 class="text-base font-medium text-black fs-2">Envoyez-moi un message</h3>
+          <form id="contact-form" class="mt-4 space-y-5">
+
             <div class="slide-up">
               <label for="name" class="block text-sm font-medium text-black">Nom complet</label>
-              <div class="mt-1">
-                <input type="text" name="name" id="name" autocomplete="name" placeholder="Votre nom complet" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
-              </div>
+              <input type="text" name="name" id="name" autocomplete="name" placeholder="Votre nom complet" class="py-2 px-3 w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
             </div>
 
             <div class="slide-up">
               <label for="email" class="block text-sm font-medium text-black">Email</label>
-              <div class="mt-1">
-                <input type="email" name="email" id="email" autocomplete="email" placeholder="Votre adresse email" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
-              </div>
+              <input type="email" name="email" id="email" autocomplete="email" placeholder="Votre adresse email" class="py-2 px-3 w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
             </div>
 
             <div>
-            <label for="service" class="block text-black font-medium mb-2">Service intéressé</label>
-            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option value="">Sélectionnez un service</option>
-            <option value="Développement web">Développement web</option>
-            <option value="Design Graphique">Design Graphique</option>
-            </select>
+              <label for="service" class="block text-black font-medium mb-1">Service intéressé</label>
+              <select id="service" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="">Sélectionnez un service</option>
+                <option value="Développement web">Développement web</option>
+                <option value="Design Graphique">Design Graphique</option>
+              </select>
             </div>
 
             <div class="slide-up">
               <label for="message" class="block text-sm font-medium text-black">Message</label>
-              <div class="mt-1">
-                <textarea id="message" name="message" rows="4" placeholder="Posez votre question..." class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></textarea>
-              </div>
+              <textarea id="message" name="message" rows="4" placeholder="Posez votre question..." class="py-2 px-3 w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></textarea>
             </div>
 
             <div class="slide-up">
-              <button type="submit" class="glow-button w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              <button type="submit" class="glow-button w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Envoyer le message
               </button>
             </div>
@@ -703,72 +697,83 @@
         </div>
 
         <!-- Coordonnées -->
-        <div class="px-6 py-8 sm:p-10 bg-gray-900 bloc-contact transition-colors duration-500 slide-up h-full">
-          <h3 class="text-lg font-medium text-white fs-2">Mes Coordonnées</h3>
-          <div class="mt-6 space-y-4 slide-up">
+        <div class="px-5 py-6 sm:p-8 bg-gray-900 bloc-contact transition-colors duration-500 slide-up h-full">
+          <h3 class="text-base font-medium text-white fs-2">Mes Coordonnées</h3>
+          <div class="mt-4 space-y-3 slide-up">
+
             <div class="flex">
               <div class="flex-shrink-0"><i class="fas fa-map-marker-alt text-white"></i></div>
-              <div class="ml-4 text-base text-white">
-                <p>Addresse :<br>33 Rue Mpangou - Brazzaville, Congo</p>
-              </div>
+              <div class="ml-3 text-sm text-white">Addresse :<br>33 Rue Mpangou - Brazzaville, Congo</div>
             </div>
 
             <div class="flex">
               <div class="flex-shrink-0"><i class="fas fa-phone-alt text-white"></i></div>
-              <div class="ml-4 text-base text-white"><p>Téléphone :<br>+242 06 488 3655</p></div>
+              <div class="ml-3 text-sm text-white">Téléphone : <br>+242 06 488 36 55</div>
             </div>
 
             <div class="flex">
               <div class="flex-shrink-0"><i class="fas fa-envelope text-white"></i></div>
-              <div class="ml-4 text-base text-white"><p>Email :</p><a href="mailto:claudycecorneilles@gmail.com" class="text-white hover:underline">dnekomonji@gmail.com</a></div>
+              <div class="ml-3 text-sm text-white">
+                <a href="mailto:claudycecorneilles@gmail.com" class="hover:underline">Email : <br>dnekomonji@gmail.com</a>
+              </div>
             </div>
+
             <div class="flex">
               <div class="flex-shrink-0"><i class="fas fa-globe-americas text-white"></i></div>
-              <div class="ml-4 text-base text-white"><p>Site web :</p><a href="https://claudyce-corneille.vercel.app" class=" text-white hover:underline">www.claudyce-corneille.vercel.app</a></div>
+              <div class="ml-3 text-sm text-white">
+                <a href="https://claudyce-corneille.vercel.app" class="hover:underline">Site web : <br>claudyce-corneille.vercel.app</a>
+              </div>
             </div>
 
             <div class="flex">
               <div class="flex-shrink-0"><i class="fas fa-clock text-white"></i></div>
-              <div class="ml-4 text-base text-white"><p>Horaires :<br>Lundi - Dimanche : 9h - 17h<br>Mardi - Jeudi - Samedi : Fermé</p></div>
+              <div class="ml-3 text-sm text-white">Horaires  : <br>Lun-Dim : 9h - 17h / Mar-Jeu-Sam : Fermé</div>
             </div>
           </div>
 
-            <!-- Réseaux sociaux avec animations décalées -->
-            <div class="mt-8">
-                <h4 class="text-sm font-medium text-white">Suivez-moi</h4>
-                <div class="mt-3 flex space-x-4">
-                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="text-white hover:text-blue-600 social-icon delay-1">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@mr_dyce" class="text-white hover:text-blue-400 social-icon delay-2">
-                        <i class="fab fa-tiktok text-xl"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@Dyce_Nekomonji" class="text-white hover:text-purple-600 social-icon delay-3">
-                        <i class="fab fa-youtube text-xl"></i>
-                    </a>
-                    <a href="https://x.com/DyceNKJ" class="text-white hover:text-blue-700 social-icon delay-4">
-                        <i class="fab fa-x text-xl"></i>
-                    </a>
-                    <a href="https://instagram.com/mr_dyce_nekomonji" class="text-white hover:text-gray-900 social-icon delay-5">
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="https://wa.me/242064883655" class="text-white hover:text-gray-900 social-icon delay-7">
-                        <i class="fab fa-whatsapp text-xl"></i>
-                    </a>
-                    <a href="https://www.facebook.com/claudycecorneille.salabanzi" class="text-white hover:text-gray-900 social-icon delay-8">
-                        <i class="fab fa-facebook-f text-xl"></i>
-                    </a>
-                </div>
+          <!-- Réseaux sociaux -->
+          <div class="mt-6">
+            <h4 class="text-xs font-medium text-white">Suivez-moi</h4>
+            <div class="mt-2 flex space-x-3">
+              <a href="https://www.linkedin.com/in/claudyce-corneille-salabanzi-422420286/" class="text-white hover:text-blue-600"><i class="fab fa-linkedin text-lg"></i></a>
+              <a href="https://www.tiktok.com/@mr_dyce" class="text-white hover:text-blue-400"><i class="fab fa-tiktok text-lg"></i></a>
+              <a href="https://www.youtube.com/@Dyce_Nekomonji" class="text-white hover:text-purple-600"><i class="fab fa-youtube text-lg"></i></a>
+              <a href="https://x.com/DyceNKJ" class="text-white hover:text-blue-700"><i class="fab fa-x text-lg"></i></a>
+              <a href="https://instagram.com/mr_dyce_nekomonji" class="text-white hover:text-gray-900"><i class="fab fa-instagram text-lg"></i></a>
+              <a href="https://wa.me/242064883655" class="text-white hover:text-gray-900"><i class="fab fa-whatsapp text-lg"></i></a>
+              <a href="https://www.facebook.com/claudycecorneille.salabanzi" class="text-white hover:text-gray-900"><i class="fab fa-facebook-f text-lg"></i></a>
             </div>
-            
-            <div class="py-3 text-base text-white fas fa-map-marker-alt"><p class="fas fa- pl-5"> Localisation :</p></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d575.7192386741207!2d15.226888404214154!3d-4.244772573730239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-4.244607!2d15.2270913!5e1!3m2!1sfr!2sus!4v1752576618041!5m2!1sfr!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-</div>
+          </div>
+
+          <!-- Localisation -->
+          <div class="py-3 text-sm text-white mt-3 text-center fs-4">📍Localisation :</div>
+
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d575.7192386741207!2d15.226888404214154!3d-4.244772573730239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-4.244607!2d15.2270913!5e1!3m2!1sfr!2sus!4v1752576618041!5m2!1sfr!2sus" 
+            width="100%" 
+            height="180" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+
+          <!-- Lien itinéraire -->
+          <div class="text-center mt-2">
+            <a 
+              href="https://maps.app.goo.gl/pTaZjuK5nxzXRSVdA" 
+              target="_blank"
+              class="inline-block px-4 py-2 bg-white text-gray-900 rounded hover:bg-green-700 text-sm font-semibold"
+              >
+              🗺 Itinéraire
+            </a>
+          </div>
 
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900">
@@ -871,6 +876,12 @@
         </div>
     </div>
 
+    <!-- Bouton Retour en Haut -->
+<button id="backToTopBtn" 
+        class="fixed bottom-6 right-6 z-50 hidden p-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none transition"
+        aria-label="Retour en haut">
+  <i class="fas fa-arrow-up"></i>
+</button>
     <script src="Javas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
