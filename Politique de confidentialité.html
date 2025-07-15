@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body id="body" class="bg-gray-900 text-gray-800 font-sans transition-colors duration-300">
+
+  <!-- Barre d'action -->
+  <div class="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto">
+    <button onclick="scrollToTop()" aria-label="Retour en haut" title="Retour en haut"
+      class="fas fa-arrow-left text-white px-4 py-2 rounded-lg shadow">
+      <a href="index.html"> Retour en arrière</a>
+    </button>
+    <button onclick="toggleTheme()" id="themeBtn" aria-label="Changer de thème" title="Changer de thème"
+      class="bg-gray-200 hover:bg-gray-300 text-gray-900 px-4 py-2 rounded-lg shadow text-2xl leading-none">
+      🌞
+    </button>
+  </div>
+
+  <!-- Contenu principal -->
+  <section id="content" class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold text-white text-center mb-12">Politique de confidentialité</h1>
+
+    <div class="space-y-8">
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">1. Introduction</h2>
+        <p>La protection de vos données personnelles est une priorité. Cette politique explique quelles informations sont collectées, pourquoi, et comment elles sont utilisées lorsque vous visitez ce site.</p>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">2. Données collectées</h2>
+        <p>Nous collectons les informations suivantes :</p>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Nom, prénom, adresse email (via formulaire de contact)</li>
+          <li>Adresse IP, type de navigateur, pages visitées (via cookies ou outils d’analyse)</li>
+        </ul>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">3. Utilisation des données</h2>
+        <p>Les données collectées sont utilisées uniquement pour :</p>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Répondre à vos messages via le formulaire</li>
+          <li>Analyser l’audience du site afin d’en améliorer le contenu</li>
+        </ul>
+        <p class="mt-2">Vos données ne sont jamais vendues ni partagées avec des tiers.</p>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">4. Cookies</h2>
+        <p>Ce site utilise éventuellement des cookies pour améliorer l’expérience de navigation et mesurer l’audience. Vous pouvez refuser les cookies via les paramètres de votre navigateur.</p>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">5. Durée de conservation</h2>
+        <p>Les données personnelles sont conservées uniquement pendant la durée nécessaire au traitement de votre demande, puis supprimées de manière sécurisée.</p>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">6. Sécurité des données</h2>
+        <p>Des mesures techniques et organisationnelles sont mises en place pour protéger vos données contre tout accès non autorisé, perte ou modification.</p>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">7. Vos droits</h2>
+        <p>Conformément à la réglementation en vigueur, vous pouvez à tout moment :</p>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Demander l'accès à vos données personnelles</li>
+          <li>Demander la rectification ou la suppression de vos données</li>
+        </ul>
+        <p class="mt-2">Pour cela, vous pouvez nous contacter à : 
+          <a href="mailto:claudycecorneilles@gmail.com" class="text-blue-600 hover:underline">claudycecorneilles@gmail.com</a>
+        </p>
+      </div>
+
+      <!-- Boîte -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">8. Responsable du traitement</h2>
+        <p>
+          Le responsable du traitement des données est :<br />
+          <strong>Nom :</strong> SALABANZI Claudyce Corneille<br />
+          <strong>Email :</strong> <a href="mailto:claudycecorneilles@gmail.com" class="text-blue-600 hover:underline">claudycecorneilles@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script JS -->
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleTheme() {
+      const body = document.getElementById('body');
+      const content = document.getElementById('content');
+      const btn = document.getElementById('themeBtn');
+
+      const isDark = body.classList.contains('bg-gray-900');
+
+      if (isDark) {
+        body.classList.remove('bg-gray-900');
+        body.classList.add('bg-white');
+        content.classList.add('text-gray-900');
+        btn.textContent = '🌙';
+        btn.setAttribute('title', 'Passer en mode sombre');
+      } else {
+        body.classList.add('bg-gray-900');
+        body.classList.remove('bg-white');
+        content.classList.remove('text-gray-900');
+        btn.textContent = '🌞';
+        btn.setAttribute('title', 'Passer en mode clair');
+      }
+    }
+  </script>
+
+</body>
+</html>
