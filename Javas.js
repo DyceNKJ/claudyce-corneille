@@ -201,3 +201,21 @@ filterItems('design');
       btnDev.classList.replace('text-white', 'text-gray-800');
     }
   }
+
+  // Afficher/Masquer le bouton selon la position de scroll
+window.addEventListener('scroll', function () {
+  const btn = document.getElementById('backToTopBtn');
+  if (window.scrollY > 300) {
+    btn.classList.remove('hidden');
+  } else {
+    btn.classList.add('hidden');
+  }
+});
+
+// Remonter en haut en douceur au clic
+document.getElementById('backToTopBtn').addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
