@@ -209,3 +209,34 @@ document.getElementById('backToTopBtn').addEventListener('click', function () {
     behavior: 'smooth'
   });
 });
+
+// Texte à taper
+    const jobText = "Développeur & Designer Créatif";
+    const descText = "Je crée des designs uniques et mémorables pour vos projets.";
+
+    // Éléments HTML
+    const typedJob = document.getElementById('typed-job');
+    const typedDesc = document.getElementById('typed-desc');
+
+    // Fonction machine à écrire simple
+    function typeWriter(text, element, speed = 100, callback = null) {
+      let i = 0;
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, speed);
+        } else if (callback) {
+          callback();
+        }
+      }
+      typing();
+    }
+
+    // Démarrage de la frappe
+    typeWriter(jobText, typedJob, 100, () => {
+      // Quand job est fini, taper la description avec délai
+      setTimeout(() => {
+        typeWriter(descText, typedDesc, 50);
+      }, 500);
+    });
