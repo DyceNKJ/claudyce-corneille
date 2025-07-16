@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
-<body id="body" class="bg-gray-900 text-gray-800 font-sans transition-colors duration-300">
+<body class="bg-gray-900 text-gray-800 font-sans transition-colors duration-300" id="body">
 
   <!-- Barre d'action -->
-  <div class="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto">
-    <button onclick="scrollToTop()" aria-label="Retour en haut" title="Retour en haut"
-      class="fas fa-arrow-left text-white px-4 py-2 rounded-lg shadow">
-      <a href="index.html"> Retour en arrière</a>
+  <div class="flex justify-between items-center px-6 py-4 max-w-5xl mx-auto bg-gray-900 border-0 rounded-[5px]">
+    <button onclick="scrollToTop()" aria-label="Retour en haut" title="Retour en haut" class="text-white px-4 py-2 rounded-lg shadow">
+      <a href="javascript:history.back()" class="text-decoration-none text-dark">
+  <i class="fas fa-arrow-left"></i> Retour
+</a>
     </button>
     <button onclick="toggleTheme()" id="themeBtn" aria-label="Changer de thème" title="Changer de thème"
       class="bg-gray-200 hover:bg-gray-300 text-gray-900 px-4 py-2 rounded-lg shadow text-2xl leading-none">

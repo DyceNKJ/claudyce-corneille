@@ -49,7 +49,7 @@
 
         // Portfolio Gallery
 const portfolioItems = [
-    { id: 1, category: 'design', image: 'K2.jpg' },
+    
     { id: 1, category: 'design', image: 'DNKJ.jpg' },
     { id: 1, category: 'design', image: 'Imprimer.jpg' },
     { id: 1, category: 'design', image: 'B.jpg' },
@@ -68,7 +68,7 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Kakemono.jpg' },
     { id: 1, category: 'design', image: 'LIVRE.jpg' },
     { id: 1, category: 'design', image: 'Boruto.jpg' },
-    { id: 1, category: 'design', image: 'Logis.jpg' },
+    { id: 1, category: 'design', image: 'Logistique.jpg' },
     { id: 1, category: 'design', image: 'Mock up.jpg' },
     { id: 1, category: 'design', image: 'MonFlyer.jpg' },
     { id: 1, category: 'design', image: 'Petit.jpg' },
@@ -84,20 +84,10 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Menus.jpg' },
     { id: 1, category: 'design', image: 'Banners.jpg' },
     { id: 1, category: 'design', image: 'Menu.jpg' },
-    { id: 1, category: 'design', image: 'Téléphone.png' },
-    { id: 1, category: 'design', image: 'CoffeeHouse.png' },
-    { id: 1, category: 'design', image: 'Logo2.png' },
-    { id: 1, category: 'design', image: 'TransAqua.png' },
     { id: 1, category: 'design', image: 'Foret.png' },
-    { id: 1, category: 'design', image: 'JULIANAFood.png' },
-    { id: 1, category: 'design', image: 'Squid Game.png' },
-    { id: 1, category: 'design', image: 'Luna.png' },
-    { id: 1, category: 'design', image: 'Marque.png' },
-    { id: 1, category: 'design', image: 'Logo complet.png' },
     { id: 1, category: 'design', image: 'Mock up copie.jpg' },
     { id: 1, category: 'design', image: 'Soccer copie.jpg' },
     { id: 1, category: 'design', image: 'Basket-Ball.jpg' },
-    { id: 1, category: 'design', image: '20230920_211928.png' },
     { id: 1, category: 'design', image: 'Chareine.jpg' },
     { id: 1, category: 'design', image: 'Juliana Food second.jpg' },
     { id: 1, category: 'design', image: 'RAIL.jpg' },
@@ -201,3 +191,21 @@ filterItems('design');
       btnDev.classList.replace('text-white', 'text-gray-800');
     }
   }
+
+  // Afficher/Masquer le bouton selon la position de scroll
+window.addEventListener('scroll', function () {
+  const btn = document.getElementById('backToTopBtn');
+  if (window.scrollY > 300) {
+    btn.classList.remove('hidden');
+  } else {
+    btn.classList.add('hidden');
+  }
+});
+
+// Remonter en haut en douceur au clic
+document.getElementById('backToTopBtn').addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
