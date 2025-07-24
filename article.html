@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Articles – Blog Dev & Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <main class="max-w-7xl mx-auto py-16 px-6 space-y-16">
+
+    <h1 class="text-4xl font-extrabold text-center text-blue-400 mb-12">Mon Journal de Bord</h1>
+
+    <!-- Grille d'articles -->
+    <div class="grid md:grid-cols-3 gap-12">
+      
+      <!-- Article 1 -->
+      <article class="fade-in bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition duration-300">
+        <header class="mb-4 text-center">
+          <p class="text-sm text-blue-400 uppercase tracking-wide">Catégorie : <span class="text-white">Débuts</span></p>
+          <h2 class="text-xl font-extrabold mt-2">Mes premiers pas dans le dev & design</h2>
+          <p class="text-gray-400 text-sm mt-2">23 juillet 2025</p>
+        </header>
+        <section class="space-y-3 text-gray-300 text-sm leading-relaxed">
+          <p>J’ai commencé le développement web sans bagage technique, uniquement animé par une passion brute pour le design et une curiosité insatiable pour le code. Entre les balbutiements en HTML, CSS, et quelques lignes de JavaScript, chaque essai ressemblait à un pas dans le brouillard, hésitant, mais déterminé.
+        Cette phase d’exploration m’a permis de construire des bases solides, d’apprivoiser les erreurs, et de comprendre que je voulais bâtir un pont entre l’esthétique et la technique.
+        Chaque ligne de code était un défi, chaque maquette une expérimentation. Ces débuts sont ma boussole : un rappel constant que tout projet ambitieux commence par une première étape imparfaite.
+        </section>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="fade-in bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition duration-300">
+        <header class="mb-4 text-center">
+          <p class="text-sm text-blue-400 uppercase tracking-wide">Catégorie : <span class="text-white">Apprentissage</span></p>
+          <h2 class="text-xl font-extrabold mt-2">Ce que j’ai appris</h2>
+          <p class="text-gray-400 text-sm mt-2">24 juillet 2025</p>
+        </header>
+        <section class="space-y-3 text-gray-300 text-sm leading-relaxed">
+          <p>La courbe d’apprentissage est abrupte, parfois même décourageante. J’ai rapidement compris que vouloir tout apprendre en même temps était une erreur. Le web évolue à une vitesse folle, et la clarté passe par la spécialisation.
+            Autre leçon : négliger le responsive design dès le départ, c’est compromettre l’expérience utilisateur. Aujourd’hui, chaque interface doit être pensée pour tous les écrans, sans exception.
+            Enfin, j’ai appris que Google et ChatGPT ne sont pas de simples outils, mais des alliés incontournables. Chercher, tester, échouer, recommencer, c’est ainsi que j’ai progressé, pas à pas, de manière concrète.
+            </section>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="fade-in bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition duration-300">
+        <header class="mb-4 text-center">
+          <p class="text-sm text-blue-400 uppercase tracking-wide">Catégorie : <span class="text-white">Méthodologie & Projets</span></p>
+          <h2 class="text-xl font-extrabold mt-2">Coder, tester, recommencer</h2>
+          <p class="text-gray-400 text-sm mt-2">24 juillet 2025</p>
+        </header>
+        <section class="space-y-3 text-gray-300 text-sm leading-relaxed">
+          <p>Ma méthodologie repose sur un cycle d’expérimentation et d’ajustement. Je commence souvent par une maquette sur Adobe XD, puis je passe au code avec HTML, CSS, Tailwind CSS, ou Bootstrap selon les besoins du projet.
+        Chaque bug est un signal : un point de friction qui m’oblige à comprendre en profondeur. C’est cette confrontation avec l’erreur qui renforce mes compétences et m’ouvre de nouvelles pistes d’amélioration.
+        Aujourd’hui, je conçois des interfaces à la fois fonctionnelles et esthétiques. Elles ne sont pas parfaites et c’est très bien ainsi. Elles racontent une histoire, la mienne, tout en répondant aux besoins réels des clients avec efficacité et style.</section>
+            </article>
+
+    </div>
+
+    <!-- Retour -->
+<!-- Retour en douceur -->
+<div class="mt-20 fade-in text-center">
+  <a href="javascript:history.back()" 
+     class="inline-flex items-center gap-2 text-white text-lg font-medium hover:text-gray-300 transition duration-300 ease-in-out transform hover:-translate-x-1">
+    <i class="fas fa-arrow-left text-xl"></i> 
+    <span>← Retour</span>
+  </a>
+</div>
+
+
+  </main>
+
+  <!-- Animation au scroll -->
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
