@@ -1,0 +1,317 @@
+        /* Animation personnalisée pour les éléments */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Effet de survol pour les cartes */
+        .portfolio-card {
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Animation du menu */
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #3B82F6;
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Style personnalisé pour le bouton */
+        .glow-button {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .glow-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0)
+            );
+            transform: rotate(30deg);
+            transition: all 0.5s ease;
+        }
+        
+        .glow-button:hover::before {
+            left: 100%;
+            top: 100%;
+        }
+        
+        .glow {
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.6), 0 0 20px rgba(139, 92, 246, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 10px rgba(139, 92, 246, 0.6), 0 0 20px rgba(139, 92, 246, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 15px rgba(139, 92, 246, 0.8), 0 0 30px rgba(139, 92, 246, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(139, 92, 246, 0.6), 0 0 20px rgba(139, 92, 246, 0.3);
+            }
+        }
+
+        .btn-float-animated {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: white;
+        padding: 14px 24px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        animation: float 3s ease-in-out infinite;
+        transition: background-color 0.3s ease;
+        }
+
+        .btn-float-animated:hover {
+        background-color: #0056b3;
+        }
+
+        /* Animation flottante */
+        @keyframes float {
+        0%   { transform: translateY(0px); }
+        50%  { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+        }
+
+        .site-info-overlay {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .site-card-hover:hover .site-info-overlay {
+        opacity: 1;
+        }
+
+        /* Slide up animation */
+        .slide-up {
+          opacity: 0;
+          transform: translateY(30px);
+          animation: slideUp 1s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* Glow & scale hover effect */
+        .glow-button {
+          position: relative;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glow-button:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+        }
+
+        /* Stagger delay for icons */
+        .social-icon {
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1s; }
+        .delay-6 { animation-delay: 1.2s; }
+        .delay-7 { animation-delay: 1.4s; }
+        .delay-8 { animation-delay: 1.6s; }
+       
+        .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .badge {
+        background-color: #1f2937; /* gris foncé */
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .site-info-overlay {
+        background-color: rgba(0, 0, 0, 0.6); /* assombrit l’arrière-plan */
+      }
+
+      .site-info-overlay * {
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); /* améliore la lisibilité du texte */
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .close:hover {
+        color: #bbb;
+      }
+
+      .tarifs-link {
+        display: inline-block;
+        color: #fff;
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .tarifs-link:hover {
+        text-decoration: underline;
+      }
+
+      .logo-carousel {
+        overflow: hidden;
+        white-space: nowrap;
+        background: linear-gradient(to right, #111827, #1f2937, #111827); /* correspond à from-gray-900 via-gray-800 to-gray-900 */
+        padding: 30px 0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
+
+      .logo-track {
+        display: flex;
+        width: calc(300px * 24); /* 12 logos × 2 car duplication */
+        animation: scroll 40s linear infinite;
+      }
+
+      .logo-slide {
+        flex: 0 0 auto;
+        width: 320px;
+        height: 180px; /* augmenté ici */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+
+      .logo-slide img {
+        max-height: 150px;
+        max-width: 100%;
+        object-fit: contain;
+        /* plus de filtre inversé ici */
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      #dev-image,
+      #design-image {
+        transition: opacity 1s ease-in-out;
+        display: block;
+      }
+
+      #typewriter {
+        min-width: 30ch; /* Réserve l'espace pour ne pas faire bouger le layout */
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      #glow-overlay {
+        font-weight: inherit;
+        font-family: inherit;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        white-space: pre;
+        z-index: 2;
+        pointer-events: none;
+        min-height : 100vh;
+      overflow-y : auto;
+      }
+
+        @keyframes softShine {
+          0% {
+            text-shadow: 0 0 2px #1f2937, 0 0 4px #3b82f6;
+          }
+          50% {
+            text-shadow: 0 0 6px #1f2937, 0 0 12px #3b82f6;
+          }
+          100% {
+            text-shadow: 0 0 2px #1f2937, 0 0 4px #3b82f6;
+          }
+        }
+
+        .animated-text {
+          animation: zoomSubtle 20s linear infinite, softShine 2.5s ease-in-out infinite;
+          transform-origin: center;
+        }
+
+          .fade-in {
+          animation: fadeIn 1s ease-in-out both;
+         }
+
+         @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
