@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 
-          <!-- Google Analytics -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRJJ9EVK1S"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-GRJJ9EVK1S');
   </script>
 
-    <style>
-    /* Optionnel : curseur clignotant */
+  <style>
+    html {
+      overflow-x: hidden;
+    }
     .cursor {
       border-right: 2px solid;
       animation: blink 0.7s steps(2) infinite;
@@ -36,106 +37,92 @@
       0%, 100% { border-color: transparent; }
       50% { border-color: currentColor; }
     }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in {
-  animation: fadeIn 1s ease-out both;
-}
-.animate-fade-in.delay-100 {
-  animation-delay: 0.1s;
-}
-.animate-fade-in.delay-200 {
-  animation-delay: 0.2s;
-}
-</style>
-
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out both;
+    }
+    .animate-fade-in.delay-100 { animation-delay: 0.1s; }
+    .animate-fade-in.delay-200 { animation-delay: 0.2s; }
+  </style>
 </head>
+
 <body class="bg-gray-900 font-sans antialiased overflow-x-hidden">
-
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 shadow-xl z-50 border-b border-gray-700/30">
-        <div class="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
-            <div class="flex justify-between h-20 items-center">
-              
-              <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center">
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-2xl transform hover:rotate-12 transition-all duration-500 hover:scale-110 shadow-lg glow">
-                            <img src="NEKO.png" alt="Logo" class="inline-block transition-transform duration-500 hover:scale-125 w-12 h-12">
-                        </div>
-                        <span class="ml-4 text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent tracking-tight hover:tracking-wide transition-all duration-500">NEKOMONJI</span>
-                    </div>
-                </div>
-                
-                <!-- Liens de navigation - Desktop -->
-                <div class="hidden md:ml-8 md:flex md:space-x-1">
-                    <a href="#accueil" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-white hover:text-indigo-300 transition-colors duration-300">Accueil</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                    <a href="#services" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Services</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                     <a href="#portfolio" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Portfolio</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                        <a href="#tarif" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Tarif</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                    <a href="#competences" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Compétences</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                    <a href="#apropos" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Profil</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                  <a href="#blog" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium hidden">
-                    <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Mémos</span>
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                  </a>
- 
-                    <a href="#contact" class="nav-link relative group inline-flex items-center px-3 py-2 text-base font-medium">
-                        <span class="text-gray-300 hover:text-indigo-300 transition-colors duration-300">Contact</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
-                    </a>           
-            
-                  </div>
-
-
-                <!-- Bouton mobile -->
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" id="mobile-menu-button" class="relative inline-flex items-center justify-center p-3 rounded-full text-gray-300 hover:text-white hover:bg-gray-700/50 focus:outline-none transition-all duration-300 group">
-                        <span class="sr-only">Ouvrir le menu</span>
-                        <div class="relative w-6 h-6">
-                            <span class="absolute block h-0.5 w-6 bg-current transition-all duration-300 transform top-1/2 -translate-y-1/2 group-hover:bg-indigo-300"></span>
-                            <span class="absolute block h-0.5 w-6 bg-current transition-all duration-300 transform top-1/2 -translate-y-1/2 group-hover:bg-indigo-300"></span>
-                            <span class="absolute block h-0.5 w-6 bg-current transition-all duration-300 transform top-1/2 -translate-y-1/2 group-hover:bg-indigo-300"></span>
-                        </div>
-                    </button>
-                </div>
-            </div>
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 shadow-xl z-50 border-b border-gray-700/30">
+    <div class="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div class="flex justify-between h-20 items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-2xl transform hover:rotate-12 transition-all duration-500 hover:scale-110 shadow-lg glow">
+            <img src="NEKO.png" alt="Logo" class="w-12 h-12 rounded-full transition-transform duration-500 hover:scale-125" />
+          </div>
+          <span class="ml-4 text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent tracking-tight hover:tracking-wide transition-all duration-500">NEKOMONJI</span>
         </div>
-        
-        <!-- Menu mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="pt-2 pb-3 space-y-1">
-                <a href="#accueil" class="block pl-3 pr-4 py-2 border-l-4 border-blue-500 text-base font-medium text-blue-700 bg-blue-50">Accueil</a>
-                <a href="#services" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Services</a>
-                <a href="#portfolio" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Portfolio</a>
-                <a href="#tarif" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Tarif</a>
-                <a href="#competences" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Compétences</a>
-                <a href="#apropos" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Profil</a>
-                <a href="#contact" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300">Contact</a>
-            </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex md:ml-8 md:space-x-1">
+          <a href="#accueil" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-white hover:text-indigo-300 transition-colors duration-300">
+            Accueil
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+          <a href="#services" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300 transition-colors duration-300">
+            Services
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+          <a href="#portfolio" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300 transition-colors duration-300">
+            Portfolio
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+          <a href="#tarif" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300 transition-colors duration-300">
+            Tarif
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+          <a href="#competences" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300 transition-colors duration-300">
+            Compétences
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+          <a href="#apropos" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300 transition-colors duration-300">
+            Profil
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+          <a href="#blog" class="hidden nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300">
+            Mémos
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 group-hover:w-full transition-all duration-500"></span>
+          </a>
+          <a href="#contact" class="nav-link group relative inline-flex items-center px-3 py-2 text-base font-medium text-gray-300 hover:text-indigo-300">
+            Contact
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 group-hover:w-full transition-all duration-500"></span>
+          </a>
         </div>
-    </nav>
+
+        <!-- Mobile button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="p-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-full transition">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <div class="pt-2 pb-3 space-y-1">
+        <a href="#accueil" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Accueil</a>
+        <a href="#services" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Services</a>
+        <a href="#portfolio" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Portfolio</a>
+        <a href="#tarif" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Tarif</a>
+        <a href="#competences" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Compétences</a>
+        <a href="#apropos" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Profil</a>
+        <a href="#contact" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-800 hover:bg-gray-100">Contact</a>
+      </div>
+    </div>
+  </nav>
 
 <!-- Hero Section -->
 <section id="accueil" class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-800 to-blue-900 overflow-hidden">
@@ -1278,6 +1265,11 @@
   // Facultatif : reset du formulaire
   this.reset();
 });
+
+              document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
 </script>
 
 </body>
