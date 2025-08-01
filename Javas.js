@@ -1,3 +1,4 @@
+
 // Lightbox functions
         function openLightbox(imageSrc, title) {
             const lightbox = document.getElementById('lightbox');

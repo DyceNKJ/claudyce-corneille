@@ -1,0 +1,45 @@
+
+/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+
+/* Example base styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+}
+
+/* Example utility classes */
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: #ffffff;
+}
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+.hover\:bg-blue-700:hover {
+  background-color: #1d4ed8;
+}
+.p-4 {
+  padding: 1rem;
+}
+.m-2 {
+  margin: 0.5rem;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ... hundreds of other Tailwind utility classes ... */
