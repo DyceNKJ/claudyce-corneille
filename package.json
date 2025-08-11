@@ -1,0 +1,23 @@
+{
+  "name": "claudyce-corneille",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Javas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DyceNKJ/claudyce-corneille.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DyceNKJ/claudyce-corneille/issues"
+  },
+  "homepage": "https://github.com/DyceNKJ/claudyce-corneille#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
