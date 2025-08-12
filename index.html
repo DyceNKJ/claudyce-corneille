@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site portfolio</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="output.css">
     
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -166,7 +165,7 @@
       <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
         <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
           <span class="block">Je suis</span>
-          <span id="glow-text" class="relative block w-fit text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-blue-600">
+          <span id="glow-text" class="relative block w-fit text-blue-500">
             Développeur <br>& Designer Créatif 
             <span id="glow-overlay" class="absolute top-0 left-0 w-full h-full whitespace-pre pointer-events-none text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-300 to-blue-400"></span>
           </span>
@@ -177,10 +176,10 @@
         </p>
         <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
           <div class="flex gap-4">
-            <a href="#portfolio" class="glow-button px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-sm hover:from-blue-700 hover:to-purple-700">
+            <a href="#portfolio" class="glow-button px-6 py-3 border border-transparent text-base font-bold rounded-md text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-sm hover:from-blue-700 hover:to-purple-700">
               Voir mon portfolio
             </a>
-            <a href="#contact" class="px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+            <a href="#contact" class="glow-button px-6 py-3 border border-transparent text-base font-bold rounded-md text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-sm hover:from-blue-700 hover:to-purple-700">
               Contactez-moi
             </a>
           </div>
@@ -198,7 +197,7 @@
             <img class="w-full brightness-110" src="Cous.jpg" alt="Designer at work" />
             <div class="absolute inset-0 bg-gradient-to-t from-blue-600 to-purple-600 opacity-70"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 class="text-xl font-bold">Chaque projet est une aventure unique</h3>
+              <h3 class="text-xl font-bold">Chaque projet est une aventure unique.</h3>
               <p class="mt-1 text-sm">J’y mets tout mon savoir-faire, avec passion et précision.</p>
             </div>
           </div>
@@ -213,8 +212,8 @@
 
     <!-- Titre -->
     <div class="text-center mb-8">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Mes Services</h2>
-      <p class="mt-3 max-w-4xl mx-auto text-xl text-gray-500 sm:mt-4">J’offre un éventail étendu de prestations digitales, parfaitement 
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl transition duration-700 ease-in-out transform hover:scale-105">Mes Services</h2>
+      <p class="mt-3 max-w-4xl mx-auto text-xl font-bold text-gray-400 sm:mt-4">J’offre un éventail étendu de prestations digitales, parfaitement 
         adaptées à vos attentes particulières. Du lancement à la réalisation finale, en incluant le suivi 
         personnalisé, je vous soutiens à chaque étape de vos initiatives numériques avec compétence et engagement.</p>
     </div>
@@ -245,7 +244,7 @@
       Je conçois des sites internet sur mesure, pensés pour offrir une expérience fluide et optimisée sur tous les appareils. Chaque projet 
       repose sur une architecture solide, un design épuré et une navigation intuitive, le tout adapté à vos objectifs spécifiques.
       Du développement front-end à l’intégration d’animations dynamiques, j’utilise des technologies modernes pour garantir rapidité, 
-      sécurité et évolutivité. <br>Le résultat : un site à la fois esthétique, fonctionnel et aligné avec votre image de marque.
+      sécurité et évolutivité.
     </p>
   </div>
 </div>
@@ -273,18 +272,19 @@
     <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
         <div class="max-w-7xl mx-auto">
             <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl transition duration-700 ease-in-out transform hover:scale-105">
                     Mon Portfolio
                 </h2>
-                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                <p class="mt-3 max-w-2xl mx-auto text-xl font-bold text-gray-400 sm:mt-4">
                     Ce portfolio regroupe l’intégralité de mes créations : visuels graphiques, contenus vidéos et projets web.<br>
-                    <span class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-5 pt-5"> Images</span>
+                    
                 </p>
 
             </div>
             
             <!-- Gallery Navigation -->
             <div class="mt-8 flex justify-center space-x-4">
+              <span class="text-3xl sm:text-4xl font-extrabold text-gray-900 transition duration-700 ease-in-out transform hover:scale-105"> Images</span>
                 <button id="filter-design" class="hidden px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200">Design</button>
               </div>
 
@@ -295,11 +295,11 @@
             
             <!-- Pagination -->
             <div class="mt-12 flex justify-center items-center space-x-4">
-                <button id="prev-btn" class="px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50">
+                <button id="prev-btn" class="px-4 py-2 border border-gray-300 text-sm font-bold rounded-md text-gray-900 bg-white hover:bg-gray-50 disabled:opacity-50">
                     Précédent
                 </button>
                 <span id="page-info" class="text-gray-500">Page 1 sur 9</span>
-                <button id="next-btn" class="px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                <button id="next-btn" class="px-4 py-2 border border-gray-300 text-sm font-bold rounded-md text-gray-900 bg-white hover:bg-gray-50">
                     Suivant
                 </button>
             </div>
@@ -345,7 +345,7 @@
 </section>
 
   <div class="max-w-7xl mx-auto px-4 text-center">
-    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-12 pt-10">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-12 pt-10 transition duration-700 ease-in-out transform hover:scale-105">
      vidéos
     </h2>
 
@@ -434,8 +434,8 @@
 
   <!-- Titre et intro -->
   <div class="text-center mb-5 pt-10">
-    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Mes Réalisations Web</h2>
-    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Découvrez quelques-uns des sites conçus.</p>
+    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl transition duration-700 ease-in-out transform hover:scale-105">Mes Réalisations Web</h2>
+    <p class="mt-3 max-w-2xl mx-auto text-xl font-bold text-gray-400 sm:mt-4">Découvrez quelques-uns des sites conçus.</p>
   </div>
 
   <!-- Cartes sites web -->
@@ -520,10 +520,10 @@
 
 <section id="tarif" class="bg-gradient-to-br from-gray-800 to-blue-900 text-gray-100 min-h-screen flex items-center px-6 py-16">
   <div class="w-full max-w-7xl mx-auto">
-    <h2 class="text-4xl font-extrabold text-gray-900 sm:text-4xl text-center mb-6 animate-fade-in">
+    <h2 class="text-4xl font-extrabold text-gray-900 sm:text-4xl text-center mb-6 transition duration-700 ease-in-out transform hover:scale-105">
       🎨 Offres et Tarifs
     </h2>
-    <p class="text-center text-gray-400 mb-10 text-lg animate-fade-in delay-100">
+    <p class="text-center font-bold text-gray-400 mb-10 text-lg animate-fade-in delay-100">
       Je crée vos visuels et contenus digitaux à des
       <span class="font-semibold text-white">prix abordables</span> et dans des
       <span class="font-semibold text-white">délais rapides</span>.
@@ -599,10 +599,9 @@
       </div>
     </div>
     <div class="pt-10 text-center">
-      <a href="#contact" class="px-4 py-2 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
-       Demander un devis
-        </a>
-        </div>
+      <a href="#contact" class="px-4 py-2 border border-transparent text-base font-medium rounded-md text-blue-900 bg-blue-100 hover:bg-blue-800 hover:text-white duration-700">
+       Demander un devis</a>
+    </div>
   </div>
 </section>
                      
@@ -611,29 +610,28 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center">
       <h2 class="b-12 text-3xl font-extrabold text-gray-900 sm:text-4xl transition duration-700 ease-in-out transform hover:scale-105">Mes Compétences Techniques</h2>
-      <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Technologies et logiciels maîtrisés</p>
+      <p class="mt-3 max-w-2xl mx-auto text-xl font-bold text-gray-400 sm:mt-4">Technologies et logiciels maîtrisés</p>
     </div>
-    <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 font-semibold">
       
       <!-- Exemple de carte avec transition -->
-      <div class="bg-white overflow-hidden shadow rounded-lg transform transition duration-500 ease-in-out hover:scale-105 hover:rotate-1">
+      <div class="bg-white shadow rounded-lg transform transition duration-500 ease-in-out hover:scale-105 hover:rotate-1">
         <div class="px-4 py-5 sm:p-6">
           <div class="flex items-center">
             <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
               <i class="fas fa-code text-white text-2xl"></i>
             </div>
             <div class="ml-5 w-0 flex-1">
-              <h3 class="text-lg font-medium text-gray-900">Technologies Web</h3>
+              <h3 class="text-lg font-medium text-gray-900 underline">Technologies Web</h3>
             </div>
           </div>
           <div class="mt-6">
             <ul class="space-y-3">
-              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">HTML</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">CSS</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Bootstrap</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">TailwindCSS</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">PHP</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">MySQL</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">HTML</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">CSS</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">TailwindCSS</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">PHP</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-blue-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">MySQL</p></li>
             </ul>
           </div>
         </div>
@@ -645,17 +643,17 @@
               <i class="fab fa-adobe text-white text-2xl"></i>
             </div>
             <div class="ml-5 w-0 flex-1">
-              <h3 class="text-lg font-medium text-gray-900">Suite Adobe</h3>
+              <h3 class="text-lg font-medium text-gray-900 underline">Suite Adobe</h3>
             </div>
           </div>
           <div class="mt-6">
             <ul class="space-y-3">
-              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Photoshop</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">XD</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Illustrator</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">InDesign</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Premiere Pro</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Character Animator</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Photoshop</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">XD</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Illustrator</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">InDesign</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Premiere Pro</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-indigo-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Character Animator</p></li>
             </ul>
           </div>
         </div>
@@ -667,16 +665,17 @@
               <i class="fas fa-laptop-code text-white text-2xl"></i>
             </div>
             <div class="ml-5 w-0 flex-1">
-              <h3 class="text-lg font-medium text-gray-900">Autres Logiciels</h3>
+              <h3 class="text-lg font-medium text-gray-900 underline">Autres Logiciels</h3>
             </div>
           </div>
           <div class="mt-6">
             <ul class="space-y-3">
-              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Microsoft Access</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Word</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Excel</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">Publisher</p></li>
-              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-700">PowerPoint</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Access</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Word</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Excel</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Publisher</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">PowerPoint</p></li>
+              <li class="flex items-start"><div class="flex-shrink-0 text-purple-500"><i class="fas fa-check"></i></div><p class="ml-2 text-sm text-gray-900">Capcut</p></li>
             </ul>
           </div>
         </div>
@@ -699,7 +698,7 @@
                     </div>
                 </div>
                 <div class="mt-12 lg:mt-0 lg:col-span-7 text-justify">
-                    <h2 class="text-3xl font-extrabold text-gray-900">Profil</h2>
+                    <h2 class="text-3xl font-extrabold text-gray-200 underline">Profil</h2>
                     <h2 class="animated-text text-white text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-relaxed break-words">
                       Nom : SALABANZI<br>
                       Prénom : Claudyce Corneille<br>
@@ -766,21 +765,21 @@
 
     <!-- Étape 1 -->
     <div class="relative" data-aos="fade-right" data-aos-duration="1000">
-      <div class="absolute -left-4 top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <div class="absolute -left-6 top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
       <h4 class="text-white font-semibold">2024 – Formation</h4>
-      <p class="text-gray-300 text-sm">Apprentissage autodidacte en développement web à travers des ressources en ligne (YouTube, blogs, documentation officielle…)</p>
+      <p class="text-gray-400 font-bold text-sm">Apprentissage autodidacte en développement web à travers des ressources en ligne (YouTube, blogs, documentation officielle…)</p>
     </div>
 
     <!-- Étape 2 -->
     <div class="relative" data-aos="fade-right" data-aos-duration="1200">
-      <div class="absolute -left-4 top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <div class="absolute -left-6 top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
       <h4 class="text-white font-semibold">2025 – Premiers projets</h4>
       <p class="text-gray-300 text-sm">Création de logos, sites vitrines, flyers pour des amis et PME locales.</p>
     </div>
 
     <!-- Étape 3 -->
     <div class="relative" data-aos="zoom-in-right" data-aos-duration="1000">
-      <div class="absolute -left-4 top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <div class="absolute -left-6 top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
       <h4 class="text-white font-semibold">2025 – Formation complémentaire </h4>
       <p class="text-gray-300 text-sm">Suivi des cours de développement web de Harvard (CS50) pour approfondir mes compétences en 
         conception front-end, programmation orientée objet, gestion de bases de données et structure des applications web modernes.</p>
@@ -788,37 +787,37 @@
   </div>
 </div>
 
-            <div class="flex items-center justify-center pt-10">
-                                <div class="grid grid-cols-2 md:grid-cols-2 gap-12 mb-8">
-                        <div class="flex items-start">
-                            <div class="items-start mr-4">
-                                <i class="fas fa-map-marker-alt text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white mb-1">Localisation</h4>
-                                <p class="text-white">Brazzaville, Congo</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="items-start mr-4">
-                                <i class="fas fa-language text-indigo-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold mb-1">Langues</h4>
-                                <p class="text-white">Français, Anglais, Italien</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-        </div>
-    </section>
+<div class="flex items-center justify-center pt-10">
+  <div class="grid grid-cols-2 md:grid-cols-2 gap-12 mb-8">
+    <div class="flex items-start">
+      <div class="items-start mr-4">
+        <i class="fas fa-map-marker-alt text-green-600"></i>
+      </div>
+      <div>
+        <h4 class="text-white mb-1">Localisation</h4>
+        <p class="text-white">Brazzaville, Congo</p>
+      </div>
+    </div>
+    <div class="flex items-start">
+      <div class="items-start mr-4">
+        <i class="fas fa-language text-indigo-600"></i>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-1">Langues</h4>
+        <p class="text-white">Français, Anglais, Italien</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
 
 <section id="blog" class="w-full bg-gray-900 py-16 px-4 text-gray-100">
   <div class="max-w-6xl mx-auto">
     
     <!-- Titre de section -->
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-extrabold text-blue-400 mb-2">Mémos de parcours</h2>
+      <h2 class="text-4xl font-extrabold text-blue-400 mb-2 transition duration-700 ease-in-out transform hover:scale-105">Mémos de parcours</h2>
       <p class="text-gray-300 text-lg">J’y partage les étapes concrètes de mon évolution, les défis que je relève 
         et les compétences que je développe pour offrir à mes clients des solutions toujours plus pertinentes et efficaces.</p>
     </div>
@@ -827,21 +826,21 @@
     <div class="grid md:grid-cols-3 gap-8">
       
       <!-- Article 1 -->
-      <div class="hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] bg-gray-800 rounded-2xl overflow-hidden transition hover:-translate-y-2 duration-300 cursor-pointer">
+      <div class="hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] bg-gray-800 rounded-2xl overflow-hidden transition hover:-translate-y-2 duration-300">
         <div class="bg-gradient-to-tr from-blue-500/40 to-blue-400/20 h-40 w-full flex items-center justify-center">
           <span class="text-2xl text-white font-bold">Débuts</span>
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-white mb-2 text-center">Mes premiers pas dans le dev & design</h3>
+          <h3 class="text-xl font-semibold text-white mb-2 text-center">Mes débuts dans le dev & design</h3>
           <p class="text-gray-400 text-sm leading-relaxed">J’ai commencé le développement web sans bagage technique, uniquement animé par une passion brute pour le design et 
             une curiosité insatiable pour le code. Entre les balbutiements en HTML, CSS, et quelques lignes de JavaScript...
-            <br><a href="article.html" class="text-blue-400 hover:underline text-sm mt-20 text-center">→ Lire la suite</a>
-          </p>
+            </p><br><a href="article.html" class="text-blue-400 text-sm text-center">→ <span class="hover:underline hover:underline-offset-4">Lire la suite</span></a>
+          
         </div>
       </div>
 
       <!-- Article 2 -->
-      <div class="hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] bg-gray-800 rounded-2xl overflow-hidden transition hover:-translate-y-2 duration-300 cursor-pointer">
+      <div class="hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] bg-gray-800 rounded-2xl overflow-hidden transition hover:-translate-y-2 duration-300">
         <div class="bg-gradient-to-tr from-purple-500/40 to-purple-400/20 h-40 w-full flex items-center justify-center">
           <span class="text-2xl text-white font-bold">Apprentissage</span>
         </div>
@@ -850,13 +849,13 @@
           <p class="text-gray-400 text-sm leading-relaxed">La courbe d’apprentissage est abrupte, parfois même décourageante. 
             J’ai rapidement compris que vouloir tout apprendre en même temps était une erreur. Le web évolue à une vitesse folle, 
             et la clarté passe par la spécialisation...
-            <br><a href="article.html" class="text-blue-400 hover:underline text-sm mt-20 text-center">→ Lire la suite</a>
-          </p>
+            </p><br><a href="article.html" class="text-blue-400 text-sm text-center">→ <span class="hover:underline hover:underline-offset-4">Lire la suite</span></a>
+          
         </div>
       </div>
 
       <!-- Article 3 -->
-         <div class="hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] bg-gray-800 rounded-2xl overflow-hidden transition hover:-translate-y-2 duration-300 cursor-pointer">
+         <div class="hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] bg-gray-800 rounded-2xl overflow-hidden transition hover:-translate-y-2 duration-300">
             <div class="bg-gradient-to-tr from-pink-500/40 to-pink-400/20 h-40 w-full flex items-center justify-center">
               <span class="text-2xl text-white font-bold">Méthodologie & Projets</span>
             </div>
@@ -865,8 +864,8 @@
               <p class="text-gray-400 text-sm leading-relaxed">Ma méthodologie repose sur un cycle d’expérimentation et d’ajustement. 
                 Je commence souvent par une maquette sur Adobe XD, puis je passe au code avec HTML, CSS, Tailwind CSS, ou 
                 Bootstrap selon les besoins du projet...
-                <br><a href="article.html" class="text-blue-400 hover:underline text-sm mt-20 text-center">→ Lire la suite</a>
-                  </p>
+                </p><br><a href="article.html" class="text-blue-400 text-sm text-center">→ <span class="hover:underline hover:underline-offset-4">Lire la suite</span></a>
+                  
                 </div>
                   </div>
                 </div>
@@ -929,8 +928,9 @@
         </svg>
       </div>
       <div class="text-4xl font-extrabold text-blue-500 mb-1">2025</div>
-      <div class="text-xl font-semibold mb-2">Début de l'aventure</div>
-      <div class="text-gray-300 text-sm leading-tight">Lancement de mon portfolio, 1ère ligne de code posée.</div>
+      <div class="text-xl font-semibold mb-2">Commencement</div>
+      <div class="text-gray-300 text-sm leading-tight">Lancement officiel de mon site portfolio. <br>Première ligne de code développée.
+      </div>
     </div>
 
     <!-- Projets en cours -->
@@ -945,7 +945,7 @@
       </div>
       <div class="text-4xl font-extrabold text-blue-500 mb-1">2</div>
       <div class="text-xl font-semibold mb-2">Projets lancés</div>
-      <div class="text-gray-300 text-sm leading-tight">Mon site + un projet web en cours. Le portfolio s’étoffe.</div>
+      <div class="text-gray-300 text-sm leading-tight">Mon site + Conception d’un site web dédié à un cabinet de formation. <br>Le portfolio s’étoffe.</div>
     </div>
 
     <!-- Visuels créés -->
@@ -961,7 +961,7 @@
       </div>
       <div class="text-4xl font-extrabold text-blue-500 mb-1">20<span class="text-blue-400 text-2xl align-super">+</span></div>
       <div class="text-xl font-semibold mb-2">Visuels créés</div>
-      <div class="text-gray-300 text-sm leading-tight">Designs graphiques pour affûter ma patte visuelle.</div>
+      <div class="text-gray-300 text-sm leading-tight">Créations graphiques affinant ma signature visuelle.</div>
     </div>
 
     <!-- Lignes de code -->
@@ -1011,10 +1011,10 @@
 <section id="contact" class="py-14 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-800 to-blue-900">
   <div class="max-w-7xl mx-auto">
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 text-center transition duration-700 ease-in-out transform hover:scale-105">
         Discutons de votre projet
       </h2>
-      <p class="mt-2 max-w-2xl mx-auto text-lg text-gray-500 sm:mt-3">
+      <p class="mt-2 max-w-2x2 mx-auto text-lg font-bold text-gray-300 sm:mt-3">
        Vous avez une idée, un besoin ou une question ? Écrivez-moi. Je réponds sous 24h.
       </p>
     </div>
@@ -1070,7 +1070,8 @@
         
             <div class="flex">
               <div class="flex-shrink-0"><i class="fas fa-clock text-white"></i></div>
-              <div class="ml-3 text-sm text-white">Horaires  : <br>Lun-Mer-Ven-Sam-Dim : 9h - 17h <br> Mar-Jeu : Fermé</div>
+              <div class="ml-3 text-sm text-white">Horaires  : 
+              <br>Lun-Mer-Ven-Sam-Dim : 9h - 17h <br> Mar-Jeu : Fermé</div>
             </div>
           </div>
 
@@ -1081,12 +1082,13 @@
               Abonnez-vous pour ne rien manquer de mes actualités et nouvelles réalisations.
             </p>
             <div class="mt-2 flex space-x-3">
-              <a href="https://www.linkedin.com/in/claudyce-corneille-salabanzi-422420286/" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-blue-600"><i class="fab fa-linkedin text-lg"></i></a>
+              <a href="https://www.linkedin.com/in/claudyce-corneille-salabanzi-422420286/" class="hidden w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-blue-600"><i class="fab fa-linkedin text-lg"></i></a>
               <a href="https://www.tiktok.com/@mr_dyce" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-blue-400"><i class="fab fa-tiktok text-lg"></i></a>
               <a href="https://www.youtube.com/@Dyce_Nekomonji" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-purple-600"><i class="fab fa-youtube text-lg"></i></a>
               <a href="https://x.com/DyceNKJ" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-blue-700"><i class="fab fa-x text-lg"></i></a>
               <a href="https://instagram.com/mr_dyce_nekomonji" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-gray-900"><i class="fab fa-instagram text-lg"></i></a>
               <a href="https://wa.me/242064883655" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-gray-900"><i class="fab fa-whatsapp text-lg"></i></a>
+              <a href="https://t.me/lspiral_channel" class="hidden w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-gray-900"><i class="fab fa-telegram-plane text-lg"></i></a>
               <a href="https://www.facebook.com/claudycecorneille.salabanzi" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-gray-500 transition text-white hover:text-gray-900"><i class="fab fa-facebook-f text-lg"></i></a>
             </div>
           </div>
@@ -1108,8 +1110,7 @@
             <a 
               href="https://maps.app.goo.gl/pTaZjuK5nxzXRSVdA" 
               target="_blank"
-              class="inline-block px-4 py-2 bg-white text-gray-900 rounded hover:bg-green-700 text-sm font-semibold"
-              >
+              class="inline-block px-4 py-2 bg-blue-800 mt-4 text-gray-200 rounded hover:bg-white hover:text-gray-900 text-sm font-semibold duration-700">
               🗺 Itinéraire
             </a>
           </div>
@@ -1165,11 +1166,11 @@
                     </h3>
                     <div class="mt-4 grid grid-cols-1 gap-3">
                         <div>
-                            <h4 class="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2">Frameworks</h4>
+                            <h4 class="fs-10 font-medium text-gray-500 uppercase tracking-wider mb-2">Frameworks</h4>
                             <a href="https://getbootstrap.com/" target="_blank" class="block text-base text-gray-300 hover:text-white transition-colors duration-300 pb-1 border-b border-gray-800 hover:border-white">
                                 Bootstrap
                             </a>
-                            <a href="https://tailwindcss.com/" target="_blank" class="block text-base text-gray-300 hover:text-white transition-colors duration-300 pb-1 border-b border-gray-800 hover:border-white">
+                            <a href="https://tailwindcss.com/" target="_blank" class="block text-base text-gray-300 hover:text-white transition-colors duration-300 pb-1 pt-2 border-b border-gray-800 hover:border-white">
                                 TailwindCSS
                             </a>
                         </div>
