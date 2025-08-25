@@ -93,6 +93,7 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Juliana Food second.jpg' },
     { id: 1, category: 'design', image: 'RAIL.jpg' },
     { id: 1, category: 'design', image: 'Luunaa.jpg' },
+    { id: 1, category: 'design', image: 'GrafiKreativ flyer.jpg' },
     { id: 1, category: 'design', image: 'Carte de visite.jpg' }
 ];
 
@@ -627,4 +628,5 @@ showSlide(current);
         answer.classList.add('hidden');
       }
     });
+
   });
