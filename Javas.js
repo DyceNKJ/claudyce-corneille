@@ -1,3 +1,4 @@
+
 // Lightbox functions
         function openLightbox(imageSrc, title) {
             const lightbox = document.getElementById('lightbox');
@@ -93,7 +94,6 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Juliana Food second.jpg' },
     { id: 1, category: 'design', image: 'RAIL.jpg' },
     { id: 1, category: 'design', image: 'Luunaa.jpg' },
-    { id: 1, category: 'design', image: 'GrafiKreativ flyer.jpg' },
     { id: 1, category: 'design', image: 'Carte de visite.jpg' }
 ];
 
@@ -628,5 +628,14 @@ showSlide(current);
         answer.classList.add('hidden');
       }
     });
-
   });
+
+  window.addEventListener("scroll", () => {
+  const skills = document.querySelectorAll(".skill");
+  skills.forEach(skill => {
+    const rect = skill.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      skill.classList.add("visible");
+    }
+  });
+});
