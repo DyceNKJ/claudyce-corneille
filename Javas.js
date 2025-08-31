@@ -629,3 +629,13 @@ showSlide(current);
       }
     });
   });
+
+  window.addEventListener("scroll", () => {
+  const skills = document.querySelectorAll(".skill");
+  skills.forEach(skill => {
+    const rect = skill.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      skill.classList.add("visible");
+    }
+  });
+});
