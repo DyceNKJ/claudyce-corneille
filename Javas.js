@@ -249,26 +249,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", async () => {
-  const res = await fetch("posts.json");
-  const posts = await res.json();
-  const container = document.getElementById("blog-posts");
-  posts.reverse().forEach(post => {
-    const card = document.createElement("div");
-    card.className = "bg-white shadow rounded overflow-hidden";
-    card.innerHTML = `
-      <img src="${post.image}" class="w-full h-48 object-cover" />
-      <div class="p-4">
-        <h3 class="text-xl font-bold mb-2">${post.title}</h3>
-        <p class="text-gray-500 text-sm mb-2">${new Date(post.date).toLocaleDateString()}</p>
-        <p class="text-gray-700 mb-4">${post.excerpt}</p>
-        <a href="article.html?id=${post.id}" class="text-blue-600 hover:underline">Lire l'article</a>
-      </div>
-    `;
-    container.appendChild(card);
-  });
-});
-
 // Partie Assistant IA
 const aiSteps = [
   { question: "Quel type de demande souhaitez-vous formuler ?", options: ["Choisir un service à réaliser", "Me contacter"] },
