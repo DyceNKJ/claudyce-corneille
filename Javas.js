@@ -53,7 +53,6 @@ const portfolioItems = [
     
     { id: 1, category: 'design', image: 'JJK Blanc.png' },
     { id: 1, category: 'design', image: 'Imprimer.jpg' },
-    { id: 1, category: 'design', image: 'B.jpg' },
     { id: 1, category: 'design', image: 'Flyer 2.jpg' },
     { id: 1, category: 'design', image: 'Piquancy.jpg' },
     { id: 1, category: 'design', image: 'Chips.jpg' },
@@ -620,4 +619,5 @@ showSlide(current);
     }
   });
 });
+
 
