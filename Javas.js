@@ -94,7 +94,8 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Juliana Food second.jpg' },
     { id: 1, category: 'design', image: 'RAIL.jpg' },
     { id: 1, category: 'design', image: 'Luunaa.jpg' },
-    { id: 1, category: 'design', image: 'Carte de visite.jpg' }
+    { id: 1, category: 'design', image: 'Card.jpg' },
+    { id: 1, category: 'design', image: 'Cafe.jpg' }
 ];
 
 // Pagination variables
@@ -619,3 +620,4 @@ showSlide(current);
     }
   });
 });
+
