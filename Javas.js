@@ -62,7 +62,6 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Bissap.jpg' },
     { id: 1, category: 'design', image: 'Coffee.jpg' },
     { id: 1, category: 'design', image: 'COTTURA.jpg' },
-    { id: 1, category: 'design', image: 'Délice.jpg' },
     { id: 1, category: 'design', image: 'Dina Menu.jpg' },
     { id: 1, category: 'design', image: 'Flyers.jpg' },
     { id: 1, category: 'design', image: 'Horreur.jpg' },
@@ -71,9 +70,7 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'Boruto.jpg' },
     { id: 1, category: 'design', image: 'Logistique.jpg' },
     { id: 1, category: 'design', image: 'Mock up.jpg' },
-    { id: 1, category: 'design', image: 'MonFlyer.jpg' },
     { id: 1, category: 'design', image: 'Petit.jpg' },
-    { id: 1, category: 'design', image: 'Poster.jpg' },
     { id: 1, category: 'design', image: 'PosterAvengers.jpg' },
     { id: 1, category: 'design', image: 'Réseaux.jpg' },
     { id: 1, category: 'design', image: 'Restaurant.jpg' },
@@ -84,7 +81,6 @@ const portfolioItems = [
     { id: 1, category: 'design', image: 'BATEAU.jpg' },
     { id: 1, category: 'design', image: 'Menus.jpg' },
     { id: 1, category: 'design', image: 'Banners.jpg' },
-    { id: 1, category: 'design', image: 'Menu.jpg' },
     { id: 1, category: 'design', image: 'Foret.png' },
     { id: 1, category: 'design', image: 'Mock up copie.jpg' },
     { id: 1, category: 'design', image: 'Soccer copie.jpg' },
@@ -619,5 +615,6 @@ showSlide(current);
     }
   });
 });
+
 
 
