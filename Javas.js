@@ -1,4 +1,4 @@
-
+//CV Selon la langue du Navigateur
   const userLang = navigator.language || navigator.userLanguage;
   const downloadLink = document.getElementById('downloadCv');
 
@@ -9,6 +9,21 @@
     downloadLink.href = 'Cv Claudyce adapté anglais.pdf';
     downloadLink.textContent = 'Download my CV';
   }
+
+  //Adresse
+  document.addEventListener("DOMContentLoaded", () => {
+  const userLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+
+  const addressEl = document.getElementById("address-text");
+
+  if (addressEl) {
+    if (userLang.startsWith("fr")) {
+      addressEl.innerHTML = 'Adresse :<br>Rue Mpangou / Mfilou - Brazzaville, Congo';
+    } else {
+      addressEl.innerHTML = 'Address :<br>Mpangou Street / Mfilou - Brazzaville, Congo';
+    }
+  }
+});
 
   // Lightbox functions
         function openLightbox(imageSrc, title) {
