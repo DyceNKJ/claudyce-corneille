@@ -1,5 +1,16 @@
 
-// Lightbox functions
+  const userLang = navigator.language || navigator.userLanguage;
+  const downloadLink = document.getElementById('downloadCv');
+
+  if (userLang.startsWith('fr')) {
+    downloadLink.href = 'Cv Claudyce adapté.pdf';
+    downloadLink.textContent = 'Télécharger mon CV';
+  } else {
+    downloadLink.href = 'Cv Claudyce adapté anglais.pdf';
+    downloadLink.textContent = 'Download my CV';
+  }
+
+  // Lightbox functions
         function openLightbox(imageSrc, title) {
             const lightbox = document.getElementById('lightbox');
             const lightboxImage = document.getElementById('lightbox-image');
@@ -615,6 +626,3 @@ showSlide(current);
     }
   });
 });
-
-
-
