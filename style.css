@@ -321,17 +321,17 @@
         }
 
         .skill {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.3s ease;
-}
+          opacity: 0;
+          transform: translateY(20px);
+          transition: all 0.3s ease;
+        }
 
-.skill.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+        .skill.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
 
-.skill:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #00d8ff;
-}
+        .skill:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 15px #00d8ff;
+        }
