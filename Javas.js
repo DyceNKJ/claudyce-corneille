@@ -222,9 +222,16 @@ document.getElementById('backToTopBtn').addEventListener('click', function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("glow-overlay");
-  const originalText = "Développeur \n& Designer Créatif";
+  const userLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+
+  // Définir le texte en fonction de la langue
+  const originalText = userLang.startsWith("fr")
+    ? "Développeur \n& Designer Créatif"
+    : "Developer \n& Creative Designer";
+
   const letters = originalText.split("");
   let index = 0;
+
   function typeLetterByLetter() {
     overlay.innerHTML = letters
       .slice(0, index)
@@ -232,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\n/g, "<br>");
     index++;
     if (index <= letters.length) {
-      setTimeout(typeLetterByLetter, 80); // vitesse
+      setTimeout(typeLetterByLetter, 80); // vitesse d'écriture
     } else {
       setTimeout(() => {
         overlay.innerHTML = "";
@@ -245,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
   typeLetterByLetter();
 });
 
+//Tarification
       document.addEventListener("DOMContentLoaded", () => {
     const euroRate = 655.957; // 1 EUR ≈ 655.957 FCFA
     const usdRate = 600;      // taux estimé
@@ -519,6 +527,7 @@ function sendContactLead() {
     });
 }
 
+//Changement d'images
 document.addEventListener("DOMContentLoaded", renderAiStep);
 document.addEventListener("DOMContentLoaded", () => {
     // Développement Web - images à faire tourner
@@ -554,6 +563,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3500);
   });
 
+  //Logo slide
   const slides = document.querySelectorAll("#background-slider .bg-slide"); 
 const dots = document.querySelectorAll(".carousel-dot");
 let current = 0;
@@ -589,7 +599,7 @@ dots.forEach((dot, index) => {
   });
 });
 
-// Init
+// Mise à jour
 showSlide(current);
   const lastUpdatedElem = document.getElementById('last-updated');
   if(lastUpdatedElem){
@@ -606,6 +616,7 @@ showSlide(current);
     lastUpdatedElem.textContent = 'Dernière mise à jour : ' + formatDate(lastModified);
   }
 
+  //FAQ
     document.querySelectorAll('.faq-item').forEach(item => {
     item.addEventListener('click', () => {
       const answer = item.querySelector('p');
@@ -617,6 +628,7 @@ showSlide(current);
     });
   });
 
+  //Compétences
   window.addEventListener("scroll", () => {
   const skills = document.querySelectorAll(".skill");
   skills.forEach(skill => {
